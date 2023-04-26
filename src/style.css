@@ -65,10 +65,12 @@ h1{
     font-family: 'Quicksand', sans-serif;
     font-size: 1.3em;
     cursor: pointer;
+    transition: all 0.4s;
 }
 
 #Home:hover, #Menu:hover, #Contact:hover{
     color: var(--fg);
+    text-shadow: var(--fg) 2px 0 12px;
 }
 
 .landing{
@@ -98,13 +100,12 @@ h1{
     color: var(--fg);
     cursor: pointer;
     animation: ease-in;
-    transition: all 1s;
+    transition: all 0.6s;
     margin-top: 30px;
 }
 
 .hero__btn:hover{
-    background-color: #040F16;
-
+    background-color: #c0a47e;
 }
 
 h2{
@@ -128,6 +129,25 @@ h2{
 
 .menuItem{
     display: block;
+    font-size: 1.4rem;
+    color: red;
+}
+
+#itemName{
+    display:block;
+    color: black;
+    font-size: 1.9rem;
+}
+
+#itemDescription{
+    display: inline-block;
+    color: darkgray;;
+    max-width: 300px;
+}
+
+#itemPrice{
+    position: absolute;
+    left: 70%;
 }
 
 /* .svg__background{

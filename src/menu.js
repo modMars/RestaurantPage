@@ -89,7 +89,31 @@ const renderMenu = () => {
 
   for (let i = 0; i < 12; i++) {
     let menuItem = document.createElement("li");
-    menuItem.textContent = menuItems[i];
+    const name = menuItems[i].name;
+    const description = menuItems[i].description;
+    const price = menuItems[i].price;
+    for (let j = 0; j < 3; j++) {
+      let span = document.createElement("span");
+      switch (j) {
+        case 0:
+          span.setAttribute("id", "itemName");
+          span.textContent = `${name}`;
+          menuItem.append(span);
+          break;
+
+        case 1:
+          span.setAttribute("id", "itemDescription");
+          span.textContent = `${description}`;
+          menuItem.append(span);
+          break;
+
+        case 2:
+          span.setAttribute("id", "itemPrice");
+          span.textContent = `${price}`;
+          menuItem.append(span);
+          break;
+      }
+    }
     menuItem.setAttribute("class", "menuItem");
     menu.append(menuItem);
   }
@@ -97,8 +121,8 @@ const renderMenu = () => {
   nav.append(ul);
   Header.append(nav);
   Main.append(Section);
-  Section_p.textContent =
-    "Experience the galaxy on your plate with our out-of-this-world space cuisine!";
+  // Section_p.textContent =
+  //   "Experience the galaxy on your plate with our out-of-this-world space cuisine!";
   Section_h2.textContent = "Menu";
   Section.className = "menuSection";
   Section_div.className = "hero__container";
