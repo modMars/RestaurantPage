@@ -1,10 +1,40 @@
-const content = document.querySelector("#content");
-const HeroSection = document.createElement("div");
-const Header = document.createElement("header");
+import "./Galaxy.jpg";
+import "./Landing.jpg";
+import "./dinner.webp";
+import "./dinner2.webp";
+import { renderHome } from "./home.js";
+import "./landingbg.svg";
+import { renderMenu } from "./menu.js";
+import "./space.webp";
+import "./space2.webp";
+import "./style.css";
 
-HeroSection.textContent =
-  "The interplanetary diner is an incredible experience from within the stars!. You will get to experience the voidness of space while enjoying a hearty highly processed meal.";
+let displayManager = (() => {
+  const clearDisplay = () => {
+    let content = document.querySelector("#content");
+    while (content.firstChild) {
+      content.removeChild(content.firstChild);
+    }
+  };
+  return { clearDisplay };
+})();
 
-Header.textContent = "Home";
+renderHome();
 
-content.append(Header, HeroSection);
+const Home = document.querySelector("#Home");
+Home.addEventListener("click", () => {
+  displayManager.clearDisplay();
+  renderHome();
+});
+
+const Menu = document.querySelector("#Menu");
+Menu.addEventListener("click", () => {
+  displayManager.clearDisplay();
+  renderMenu();
+});
+
+const Contact = document.querySelector("#Contact");
+Menu.addEventListener("click", () => {
+  displayManager.clearDisplay();
+  renderMenu();
+});

@@ -1,0 +1,143 @@
+:root{
+    --fg: #C0A47E;
+    --sd: #65BAF0;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+    background-color: #040F16;
+    color: var(--sd);
+}
+
+li{
+    margin: 0px 80px;
+    display: inline;
+}
+
+h1{
+    color: var(--fg);
+    font-family: 'Pacifico', cursive;
+    font-weight: 100;
+    font-size: 8em;
+    text-shadow: var(--fg) 1px 0 10px;
+}
+
+.hero__container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 100px; */
+}
+
+.hero__text{
+    font-size: 2.2rem;
+    max-width: 30ch;
+    margin-top: 20px;
+    margin-right: 105px;
+    padding: 20px 100px;
+}
+
+@media (max-width: 600px) {
+    h1{
+        font-size: 5rem;
+    }
+    .hero__text{
+        font-size: 1.6rem;
+    }
+    
+    .hero__btn{
+        width: 100px;
+    }
+    
+}
+
+#Home, #Menu, #Contact{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+#Home:hover, #Menu:hover, #Contact:hover{
+    color: var(--fg);
+}
+
+.landing{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.homeSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    height: 93vh;
+    background-image: url(./space2.webp);
+    background-size: cover;
+    background-position: right;
+    position: relative;
+    color: var(--sd);
+}
+
+.hero__btn{
+    width: 500px;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px var(--fg) solid;
+    font-size: 1em;
+    background-color: transparent;
+    color: var(--fg);
+    cursor: pointer;
+    animation: ease-in;
+    transition: all 1s;
+    margin-top: 30px;
+}
+
+.hero__btn:hover{
+    background-color: #040F16;
+
+}
+
+h2{
+    font-family: 'Pacifico', cursive;
+    font-size: 7em;
+    color: var(--fg);
+}
+
+.menuSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    height: 93vh;
+    background-image: url(./space.webp);
+    background-size: cover;
+    background-position: right;
+    position: relative;
+    color: var(--sd);
+}
+
+.menuItem{
+    display: block;
+}
+
+/* .svg__background{
+    aspect-ratio: 960/540;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer1{
+    background-image: url(./landingbg.svg);
+} */
