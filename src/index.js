@@ -1,5 +1,6 @@
 import "./Galaxy.jpg";
 import "./Landing.jpg";
+import { renderContact } from "./contact.js";
 import "./dinner.webp";
 import "./dinner2.webp";
 import { renderHome } from "./home.js";
@@ -34,7 +35,7 @@ Menu.addEventListener("click", () => {
 });
 
 const Contact = document.querySelector("#Contact");
-Menu.addEventListener("click", () => {
+Contact.addEventListener("click", () => {
   displayManager.clearDisplay();
-  renderMenu();
+  renderContact();
 });

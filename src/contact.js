@@ -6,10 +6,6 @@ const renderContact = () => {
   const Main = document.createElement("main");
   const Section = document.createElement("section");
   const Section_div = document.createElement("div");
-  const Section_h1 = document.createElement("h1");
-  const Section_p = document.createElement("p");
-  const Section_btn = document.createElement("button");
-  Section_btn.textContent = "HI";
   Main.className = "landing";
   for (let i = 0; i < 3; i++) {
     let arr = ["Home", "Menu", "Contact"];
@@ -23,14 +19,9 @@ const renderContact = () => {
   nav.append(ul);
   Header.append(nav);
   Main.append(Section);
-  Section_p.textContent =
-    "Experience the galaxy on your plate with our out-of-this-world space cuisine!";
-  Section_h1.textContent = "Contact";
   Section.className = "homeSection";
   Section_div.className = "hero__container";
-  Section_p.className = "hero__text";
-  Section_btn.className = "hero__btn";
-  Section_div.append(Section_h1, Section_p, Section_btn);
+  Section_div.append();
   Section.append(Section_div);
   content.append(Header, Main);
 };

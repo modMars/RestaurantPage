@@ -7,7 +7,7 @@ const renderMenu = () => {
   const Section = document.createElement("section");
   const Section_div = document.createElement("div");
   const Section_h2 = document.createElement("h2");
-  const Section_p = document.createElement("p");
+
   Main.className = "landing";
   for (let i = 0; i < 3; i++) {
     let arr = ["Home", "Menu", "Contact"];
@@ -86,7 +86,7 @@ const renderMenu = () => {
   ];
 
   let menu = document.createElement("ul");
-
+  menu.className = "menuList";
   for (let i = 0; i < 12; i++) {
     let menuItem = document.createElement("li");
     const name = menuItems[i].name;
@@ -125,9 +125,8 @@ const renderMenu = () => {
   //   "Experience the galaxy on your plate with our out-of-this-world space cuisine!";
   Section_h2.textContent = "Menu";
   Section.className = "menuSection";
-  Section_div.className = "hero__container";
-  Section_p.className = "hero__text";
-  Section_div.append(Section_h2, Section_p, menu);
+  Section_div.className = "menu__container";
+  Section_div.append(Section_h2, menu);
   Section.append(Section_div);
   content.append(Header, Main);
 };

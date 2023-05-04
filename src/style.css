@@ -112,52 +112,87 @@ h2{
     font-family: 'Pacifico', cursive;
     font-size: 7em;
     color: var(--fg);
+    align-self: flex-start;
+    margin-left: 60px;
+    margin-bottom: 50px;
+    text-shadow: var(--fg) 1px 0 10px;
 }
+
+/* h2::after{
+    content: "";
+    display:block;
+    height: 1px;
+    width: 1200px;
+    background-color: var(--sd);
+} */
 
 .menuSection{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
-    height: 93vh;
-    background-image: url(./space.webp);
+    align-items: center;
+    /* flex-wrap: nowrap; */
+    min-height: 93vh;
+    background-image: url(./space2.webp);
     background-size: cover;
-    background-position: right;
-    position: relative;
-    color: var(--sd);
+}
+
+.menu__container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.menuList{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .menuItem{
     display: block;
     font-size: 1.4rem;
-    color: red;
 }
 
 #itemName{
     display:block;
-    color: black;
+    align-self: flex-start;
+    color: var(--fg);
     font-size: 1.9rem;
+    margin-top: 1rem;
+    margin-bottom: 0.2rem;
+    text-shadow: var(--fg) 2px 0 12px;
 }
 
 #itemDescription{
     display: inline-block;
-    color: darkgray;;
-    max-width: 300px;
+    color: #999999;
+    font-size: 1.2rem;
+    width: 300px;
 }
 
 #itemPrice{
-    position: absolute;
-    left: 70%;
+    color: var(--sd);
+    display: inline-block;
+    margin-left: 92%;
+    transform: translateY(-55px);
+    font-weight: 800;
 }
 
-/* .svg__background{
-    aspect-ratio: 960/540;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+#itemPrice::after{
+    content: "";
+    display: block;
+    background-color:var(--fg);
+    height: 1px;
+    margin-bottom: 10px;
+    margin-top: 5px;
 }
 
-.layer1{
-    background-image: url(./landingbg.svg);
-} */
+.menuList:nth-child(3) .menuItem:before{
+    content: "Appetizers";
+    color: green;
+    width: 100px;
+    height: 100px;
+}
