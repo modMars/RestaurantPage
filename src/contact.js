@@ -13,18 +13,21 @@ const renderContact = () => {
   const submit__btn = document.createElement("button");
   Main.className = "landing";
 
-  form.setAttribute("action", "https://www.text.com");
+  form.setAttribute("action", "https://httpbin.org/post");
   form.setAttribute("method", "post");
   form__name.setAttribute("id", "form__name");
   form__name.setAttribute("type", "text");
+  form__name.setAttribute("name", "form__name");
   name__label.setAttribute("for", "form__name");
   name__label.textContent = "Name";
   form__email.setAttribute("id", "form__email");
   form__email.setAttribute("type", "text");
+  form__email.setAttribute("name", "form__email");
   email__label.setAttribute("for", "form__email");
   email__label.textContent = "E-Mail";
   form__message.setAttribute("id", "form__message");
   form__message.setAttribute("type", "textarea");
+  form__message.setAttribute("name", "form__message");
   message__label.setAttribute("for", "form__message");
   message__label.textContent = "Message";
   submit__btn.textContent = "Submit";
