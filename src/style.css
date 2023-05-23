@@ -24,11 +24,11 @@ li{
 }
 
 h1{
-    color: var(--fg);
+    color: #def2fa;
+    text-shadow: var(--sd) 1px 0 10px;
     font-family: 'Pacifico', cursive;
     font-weight: 100;
     font-size: 8em;
-    text-shadow: var(--fg) 1px 0 10px;
 }
 
 .hero__container{
@@ -68,8 +68,8 @@ a{
 }
 
 a:hover{
-    color: var(--fg);
-    text-shadow: var(--fg) 2px 0 12px;
+    color: #def2fa;
+    text-shadow: var(--sd) 2px 0 12px;
 }
 
 .landing{
@@ -94,10 +94,10 @@ a:hover{
     width: 500px;
     height: 50px;
     border-radius: 5px;
-    border: 2px var(--fg) solid;
+    border: 2px #def2fa solid;
+    color: #def2fa;
     font-size: 1.3rem;
     background-color: transparent;
-    color: var(--fg);
     cursor: pointer;
     transition: all 0.6s ease-in;
     margin-top: 30px;
@@ -105,18 +105,18 @@ a:hover{
 
 .hero__btn:hover{
     color: #000;
-    background-color: #c0a47e;
-    box-shadow: var(--fg) 1px 0 15px;
+    background-color: #def2fa;
+    box-shadow: var(--sd) 1px 0 15px;
 }
 
 h2{
     font-family: 'Pacifico', cursive;
     font-size: 7em;
-    color: var(--fg);
     align-self: flex-start;
     margin-left: 60px;
     margin-bottom: 50px;
-    text-shadow: var(--fg) 1px 0 10px;
+    color: #def2fa;
+    text-shadow: var(--sd) 1px 0 10px;
 }
 
 /* h2::after{
@@ -162,22 +162,23 @@ h2{
 #itemName{
     display:block;
     align-self: flex-start;
-    color: var(--fg);
+    color: #def2fa;
     font-size: 1.9rem;
     margin-top: 1rem;
     margin-bottom: 0.2rem;
-    text-shadow: var(--fg) 2px 0 12px;
+    text-shadow: var(--sd) 2px 0 12px;
 }
 
 #itemDescription{
     display: inline-block;
     color: #999999;
     font-size: 1.2rem;
+    font-weight: bold;
     width: 300px;
 }
 
 #itemPrice{
-    color: var(--sd);
+    color: #def2fa;
     display: inline-block;
     margin-left: 92%;
     transform: translateY(-55px);
@@ -187,7 +188,7 @@ h2{
 #itemPrice::after{
     content: "";
     display: block;
-    background-color:var(--fg);
+    background-color:var(--sd);
     height: 1px;
     margin-bottom: 10px;
     margin-top: 5px;
@@ -221,8 +222,9 @@ form {
 }
 
 label {
-    color: var(--fg);
+    color: #def2fa;
     font-size: 1.65em;
+    text-shadow: var(--sd) 3px 0 12px;
 }
 
 input, textarea {
@@ -231,11 +233,8 @@ input, textarea {
     margin-top: 0.4rem;
     border-radius: 5px;
     border: none;
+    resize: none;
 }
-
-/* textarea{
-    border-radius: 5px;
-} */
 
 #form__message{
     min-height: 15rem;
@@ -249,10 +248,10 @@ input, textarea {
     height: 45px;
     align-self: flex-end;
     border-radius: 6px;
-    border: 5px solid var(--sd);
     color: #000;
     font-size: 1.3rem;
     font-weight: bold;
+    border: 5px solid var(--sd);
     background-color: var(--sd);
     margin-top: 10px;
     cursor: pointer;
@@ -260,7 +259,7 @@ input, textarea {
 }
 
 #form__submit:hover{
-    background-color: var(--fg);
-    border: 5px solid var(--fg);
-    box-shadow: var(--fg) 1px 0 10px;
+    background-color: #def2fa;
+    border: 5px solid #def2fa;
+    box-shadow: var(--sd) 1px 0 10px;
 }
